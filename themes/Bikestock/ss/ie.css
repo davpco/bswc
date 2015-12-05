@@ -1,0 +1,13 @@
+.btn_next{
+	background: url(../im/arrows_right_ie.png) top no-repeat !important;
+}
+.btn_prev{
+	background: url(../im/arrows_left_ie.png) top no-repeat !important;
+}
+.btn_next:hover, .btn_prev:hover{
+	background-position: 3px -101px !important;
+}
+
+.btn_next:active, .btn_prev:hover{
+	background-position: 3px -201px !important;
+}

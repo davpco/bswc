@@ -1,0 +1,19 @@
+{
+  "name": "bikestock",
+  "description": "Wordpress theme for Bikestock.",
+  "author": {
+    "name": "Barrel",
+    "url": "http://barrelny.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-less": "~0.5.1",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-grunticon": "~0.6.8",
+    "grunt-rev": "^0.1.0",
+    "matchdep": "~0.1.1"
+  }
+}
