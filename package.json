@@ -2,18 +2,33 @@
   "name": "bikestock",
   "description": "Wordpress theme for Bikestock.",
   "author": {
-    "name": "Barrel",
-    "url": "http://barrelny.com"
+    "name": "Durlan Vega",
+    "url": "http://www.bikestockny.com"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.0",
     "grunt-contrib-less": "~0.5.1",
+    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "~0.2.1",
     "grunt-contrib-watch": "~0.4.3",
+    "grunt-ftp-push": "^0.4.3",
+    "grunt-ftpush": "^0.3.3",
     "grunt-grunticon": "~0.6.8",
     "grunt-rev": "^0.1.0",
     "matchdep": "~0.1.1"
+  },
+  "bs": {
+    "theme": {
+      "path": "themes/Bikestock"
+    },
+    "wc": {
+      "path": "plugins/woocommerce"
+    },
+    "assets": {
+      "css": "themes/Bikestock/assets/css",
+      "sass": "themes/Bikestock/assets/sass"
+    }
   }
 }

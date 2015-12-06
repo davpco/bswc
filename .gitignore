@@ -18,7 +18,9 @@
 /themes/storefront
 /themes/Bikestock/pdf
 /themes/Bikestock/ss_backup
+/node_modules
 /themes/Bikestock/fonts
 /themes/Bikestock/img
+/.sass-cache
+/.grunt
 /uploads
-/themes/Bikestock/node_modules

@@ -87,11 +87,22 @@ function remove_cssjs_ver($src)
 add_filter('style_loader_src', 'remove_cssjs_ver', 10, 2);
 add_filter('script_loader_src', 'remove_cssjs_ver', 10, 2);
 
-remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
-add_action('after_setup_theme', 'woocommerce_support');
-function woocommerce_support()
-{
-    add_theme_support('woocommerce');
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+    echo '<section id="woo_main">';
+}
+
+function my_theme_wrapper_end() {
+    echo '</section>';
+}
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
 }
